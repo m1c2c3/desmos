@@ -1,0 +1,12 @@
+2/15/2022
+Main Changes:
+    Created 5 layout components
+        Homepage layout
+        Graphing caclulator layout
+        scientific caclulator
+        matrix caclulator
+        fourfunction caclulator
+    Added the routes from the drop down bar to the previous layouts
+
+    Also moved most of the components from the "app.components.html" to the "home-layout.components.html"
+    

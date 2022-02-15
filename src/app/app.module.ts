@@ -8,6 +8,12 @@ import { ContestFinalistCard } from './ContestFinalistCard/ContestFinalistCard.c
 import { FooterComponent } from './footer/footer.component';
 import { Footer2Component } from './footer2/footer2.component';
 import { Header } from './header/header.component';
+import { AppRoutingModule } from './app-routing.module';
+import { GraphingCalculator } from './calculators/graphing.component';
+import { HomeLayoutComponent } from './homepage/home-layout.component';
+import { ScientificCalculator } from './calculators/scientific.component';
+import { FourFunctionCalculator } from './calculators/fourfunction.component';
+import { MatrixCalculator } from './calculators/matrix.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +23,16 @@ import { Header } from './header/header.component';
     Footer2Component,
     Card1Component,
     Card2Component,
-    ContestFinalistCard
+    ContestFinalistCard,
+    GraphingCalculator,
+    HomeLayoutComponent,
+    ScientificCalculator,
+    FourFunctionCalculator,
+    MatrixCalculator
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
