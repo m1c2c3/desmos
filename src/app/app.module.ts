@@ -9,11 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { Footer2Component } from './footer2/footer2.component';
 import { Header } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
-import { GraphingCalculator } from './calculators/graphing.component';
+import { GraphingCalculator } from './MathTools/graphing.component';
 import { HomeLayoutComponent } from './homepage/home-layout.component';
-import { ScientificCalculator } from './calculators/scientific.component';
-import { FourFunctionCalculator } from './calculators/fourfunction.component';
-import { MatrixCalculator } from './calculators/matrix.component';
+import { ScientificCalculator } from './MathTools/scientific.component';
+import { FourFunctionCalculator } from './MathTools/fourfunction.component';
+import { MatrixCalculator } from './MathTools/matrix.component';
+import { TestPractice } from './OtherMathTools/testpractice.component';
+import { GeometryTool } from './OtherMathTools/geometrytool.component';
+import { BlackHeader } from './Navigation/blackheader.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,11 @@ import { MatrixCalculator } from './calculators/matrix.component';
     HomeLayoutComponent,
     ScientificCalculator,
     FourFunctionCalculator,
-    MatrixCalculator
+    MatrixCalculator,
+    TestPractice,
+    GeometryTool,
+    BlackHeader,
+    
   ],
   imports: [
     BrowserModule,
