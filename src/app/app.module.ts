@@ -17,6 +17,8 @@ import { MatrixCalculator } from './MathTools/matrix.component';
 import { TestPractice } from './OtherMathTools/testpractice.component';
 import { GeometryTool } from './OtherMathTools/geometrytool.component';
 import { BlackHeader } from './Navigation/blackheader.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,11 +37,13 @@ import { BlackHeader } from './Navigation/blackheader.component';
     TestPractice,
     GeometryTool,
     BlackHeader,
+    UserInfoComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

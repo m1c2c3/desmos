@@ -10,3 +10,19 @@ Main Changes:
 
     Also moved most of the components from the "app.components.html" to the "home-layout.components.html"
     
+2/22/2022
+Added new components and added routing for them:
+    In the OtherMathTools file:
+        geometrytools
+        testpractice
+    In the ClassRoom file:
+        curriculum
+Added new header in the Navigation folder:
+    blackheader
+
+2/27/2022
+Linked backend my-info.jason
+created and displayed the my-info in a component in app.component.html
+
+    
+
