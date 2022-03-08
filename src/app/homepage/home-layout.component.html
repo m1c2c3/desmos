@@ -2,21 +2,21 @@
     Welcome to Desmos
 </p>
 <div>
-    <div class = "d-flex justify-content-center">
-    <desmos-card1></desmos-card1>
-    <desmos-card2></desmos-card2>
-</div>
-    <div class="container-fluid d-flex justify-content-center">
-        <desmos-ContestFinalistCard img="./assets/title1.png" title="Modulo City" artist="Hamdoul E."
-            location="United States"></desmos-ContestFinalistCard>
-        <desmos-ContestFinalistCard img="./assets/title2.png" title="Blooming Flower" artist="Ye Shun Hew"
-            location="Malaysia"></desmos-ContestFinalistCard>
-        <desmos-ContestFinalistCard img="./assets/title3.png" title="desMONTAGNES" artist="Akash Shendure"
-            location="Washington, USA"></desmos-ContestFinalistCard>
-        <desmos-ContestFinalistCard img="./assets/title4.png" title="Art Submission" artist="Minh Khue Truong"
-            location="California, USA"></desmos-ContestFinalistCard>
-
+    <div class="d-flex justify-content-center">
+        <desmos-card1></desmos-card1>
+        <desmos-card2></desmos-card2>
     </div>
+
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div *ngFor="let contest of contests">
+            <desmos-ContestFinalistCard img={{contest.img}} title={{contest.title}} artist={{contest.artist}}
+                location={{contest.location}}>
+
+            </desmos-ContestFinalistCard>
+        </div>
+    </div>
+
 </div>
 <desmos-footer>Loading...</desmos-footer>
 <desmos-footer2>Loading...</desmos-footer2>
