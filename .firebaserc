@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "desmos-e521a"
+  },
+  "targets": {
+    "desmos-e521a": {
+      "hosting": {
+        "desmos": [
+          "desmos-e521a"
+        ]
+      }
+    }
+  }
+}

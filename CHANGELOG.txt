@@ -24,5 +24,23 @@ Added new header in the Navigation folder:
 Linked backend my-info.jason
 created and displayed the my-info in a component in app.component.html
 
+
+
     
 
+3/8/2022
+Added content to database
+
+created Contest.service.ts
+
+added ngforloop for ContestFinalistCard in the home-layout.component
+
+connected data from database to the ngforloop
+
+created the ContestFinalistCard.model
+
+3/22/2022
+Created dist/desmos folder
+
+changed ContestFinalistCard.service.ts so it no longer uses httpclient dependancy but AngularFireDatabase
+ 
