@@ -2,7 +2,7 @@ export class ContestFinalistCardModel{
 img: string;
 title: string;
 location: string;
- artist: string;
+artist: string;
 
 constructor(img: string, title: string, location: string, artist: string){
     this.img = img;

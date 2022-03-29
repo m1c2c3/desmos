@@ -8,6 +8,7 @@ import { FourFunctionCalculator } from './MathTools/fourfunction.component';
 import { MatrixCalculator } from './MathTools/matrix.component';
 import { TestPractice } from './OtherMathTools/testpractice.component';
 import { GeometryTool } from './OtherMathTools/geometrytool.component';
+import { AddFinalistCardComponent } from './ContestFinalistCard/add-finalist-card/add-finalist-card.component';
 
 const routes:Routes = [
   {path: 'graphing', component: GraphingCalculator},
@@ -16,6 +17,8 @@ const routes:Routes = [
   {path: 'matrix', component: MatrixCalculator},
   {path: 'testpractice', component: TestPractice},
   {path: 'geometrytool', component: GeometryTool},
+  {path: 'addfinalistcard', component: AddFinalistCardComponent},
+
 
   {path: '', component: HomeLayoutComponent}
 

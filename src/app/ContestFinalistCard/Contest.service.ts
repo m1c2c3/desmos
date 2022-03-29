@@ -1,24 +1,24 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { ContestFinalistCardModel } from "./ContestFinalistCard.model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 
 @Injectable({
     providedIn: 'root'
 })
 export class ContestService {
-    private baseUrl:string = "https://desmos-e521a-default-rtdb.firebaseio.com/";
-    private contestEndpoints: string = "contest.json";
-
-    constructor(private http:HttpClient) {
+     constructor(private db:AngularFireDatabase) {
 
 
 
     }
 
     public getContest () {
-        return this.http.get <ContestFinalistCardModel []>(this.baseUrl + this.contestEndpoints);
+        return this.db.list<ContestFinalistCardModel>("contest").valueChanges();
 
+    }
 
+    addContest(contest :ContestFinalistCardModel){
+        this.db.list<ContestFinalistCardModel>("contest").push(contest);
     }
 }

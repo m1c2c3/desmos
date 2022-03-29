@@ -43,4 +43,14 @@ created the ContestFinalistCard.model
 Created dist/desmos folder
 
 changed ContestFinalistCard.service.ts so it no longer uses httpclient dependancy but AngularFireDatabase
+
+3/29/2022
  
+ created AddFinalistCard component
+
+ made routing to addfinalistcomponent (since im not using it in my website I just you have to type in "/addfinalistcard" to the url)
+ 
+ added formmodule to app.module.ts
+
+ also created Contest.service.ts
+

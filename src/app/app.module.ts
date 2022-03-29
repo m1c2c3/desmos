@@ -24,6 +24,8 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AddFinalistCardComponent } from './ContestFinalistCard/add-finalist-card/add-finalist-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     GeometryTool,
     BlackHeader,
     UserInfoComponent,
+    AddFinalistCardComponent,
     
   ],
   imports: [
@@ -51,6 +54,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
