@@ -54,3 +54,8 @@ changed ContestFinalistCard.service.ts so it no longer uses httpclient dependanc
 
  also created Contest.service.ts
 
+3/18/2022
+
+created authentication component
+
+connected it to the database with authentication.service.ts 

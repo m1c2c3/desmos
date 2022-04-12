@@ -26,6 +26,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddFinalistCardComponent } from './ContestFinalistCard/add-finalist-card/add-finalist-card.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FormsModule } from '@angular/forms';
     BlackHeader,
     UserInfoComponent,
     AddFinalistCardComponent,
+    AuthenticationComponent,
     
   ],
   imports: [
